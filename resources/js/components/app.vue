@@ -1,6 +1,8 @@
 <template>
     <main>
-        <router-view :key="$route.fullPath" />
+        <b-container>
+            <router-view :key="$route.fullPath" />
+        </b-container>
     </main>
 </template>
 
