@@ -1,9 +1,17 @@
 <template>
-    <main>
-        <b-container>
-            <router-view :key="$route.fullPath" />
-        </b-container>
-    </main>
+    <div>
+        <a-layout>
+            <a-layout-header class="header">
+                <div>Futsal Teams</div>
+            </a-layout-header>
+
+            <main>
+                <div class="container">
+                    <router-view :key="$route.fullPath" />
+                </div>
+            </main>
+        </a-layout>
+    </div>
 </template>
 
 <script>
@@ -11,3 +19,13 @@
         //
     }
 </script>
+
+<style scoped>
+    .header {
+        color: #fff;
+    }
+
+    .container {
+        margin: 24px;
+    }
+</style>

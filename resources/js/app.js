@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import { routes } from './routes'
 
-import '@/plugins/bootstrap-vue';
+import '@/plugins/ant-design-vue';
 
 import App from '@/components/app.vue'
 
